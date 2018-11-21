@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>In class form </title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="">
+<style>
+label {font-weight:bold; color:green;}
+#range{color:red;} 
+.column {float:left;padding:20px;}
+
+
+</style>
+
+
+</head>
+<body>
+<div class="column">
+<form action="https://idesstage2.bc.edu/class/results.php" method="post">
+Name:
+<input type="text" name="name"><br>
+Email:
+<input type="email" name="Email" required><br>
+<br>
+<input type="range" min="1" max="100" onchange="showValue(this.value)"><br>
+
+<span id="range">0</span><br>
+<input type="image" src="submit.jpg" alt="submit">
+</form>
+</div>
+<div class="column">
+<img src="cow.jpg" width="75%"><br>
+<caption>Picture of a cow	</caption>
+</div>
+
+<script type="text/javascript">
+function showValue(newValue)
+{
+document.getElementById("range").innerHTML=newValue;
+}
+</script>
+
+
+</body>
+</html>
