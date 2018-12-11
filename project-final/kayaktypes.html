@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Kayak Types</title>
+<meta charset="UTF-8">
+<meta name="keywords" content="kayak, paddle, fish, sit-in, sit-on-top, safety, paddling">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+#li:link {
+  color: green; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+#li:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#li:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#li:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+
+#sot:link {
+  color: green; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+#sot:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#sot:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#sot:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b><br></b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="blah.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="paddles.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Paddles</a> 
+    <a href="safety.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Safety</a> 
+    <a href="photos.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Photos</a> 
+	<a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span></span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+   
+    <h1 class="w3-xxxlarge w3-text-red"><b>Types of Kayaks</b></h1>
+	 <img src="./images/yakicon.png" alt="Smiley face" height="25%" width="25%" style="float:right">
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <a href="sitin.html" target="_new"><img src="./images/sitinyak.jpg" style="width:100%"  alt="Photo of Sit-in Kayak"></a>
+	 <a href="sitin.html" id="li" target="_new"><h1 class="w3-xxxlarge w3-text-red"><b>Sit in Kayaks</b></h1></a>
+	  <p>You have more options with a sit-in. You can use them in warm weather, but you can also attach a spray skirt and use them 
+	  in colder, rougher water. You’ll stay drier with a sit-in and they often have more storage and offer more options to store 
+	  belongings and keep them from getting wet as well. They frequently are constructed with foot braces inside so that you can 
+	  brace your legs for a more efficient stroke and to get more power from your stroke. Contrary to what some may think, 
+	  sit-in kayaks are actually quite roomy, rather than confined.
+	  </p>
+	  
+     <a href="sot.html" target="_new"> <img src="./images/sotyak.jpg" style="width:100%"  alt="Photo of Sit-on-Top Kayak"></a>
+     <a href="sot.html" id="sot" target="_new"><h1 class="w3-xxxlarge w3-text-red"><b>Sit-On-Top Kayaks</b></h1></a>
+	  <p>A sit-on-top kayak has a molded-in depression on top that gives you a place to sit. 
+	  They are versatile and can be used for a recreational day on the water. They are a great option for anyone, 
+	  including a beginner who is learning the ins and outs of kayaking. They may also be a good choice for someone who is tall, 
+	  has long legs or is large framed (always check weight capacity specifications when buying). You will get splashed and get wet, 
+	  so they tend to be best for warm days and warm water. They are reasonably easy to get in and out of, which is great if you plan
+	  to swim or are boating with kids or dogs.
+	 </p>
+    </div>
+ <!--remove?>
+    <div class="w3-half">
+      <img src="./images/homepic4.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="./images/homepic5.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="./images/homepic6.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  
+ 
+  
+
+ 
+
+ 
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Advantages/Disadvantages</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+   
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Sit in</li>
+        <li class="w3-padding-16">Faster</li>
+        <li class="w3-padding-16">Typically lighterweight</li>
+        <li class="w3-padding-16">Narrower</li>
+        <li class="w3-padding-16">Can use spray skirt</li>
+        <li class="w3-padding-16">Less stable</li>
+       
+          
+         
+       
+        <li class="w3-light-grey w3-padding-24">
+          <a href="sitin.html" target="_new"><button class="w3-button w3-white w3-padding-large w3-hover-black">Learn more</button></a>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Sit-On-Top</li>
+        <li class="w3-padding-16">Easier to get in/out of</li>
+        <li class="w3-padding-16">Wider</li>
+        <li class="w3-padding-16">Slower</li>
+        <li class="w3-padding-16">More stable</li>
+        <li class="w3-padding-16">Better for fishing</li>
+        
+        <li class="w3-light-grey w3-padding-24">
+          <a href="sot.html" target="_new"><button class="w3-button w3-red w3-padding-large w3-hover-black">Learn more</button></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
